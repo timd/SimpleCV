@@ -53,13 +53,9 @@
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"SCVCollectionViewCell" bundle:Nil] forCellWithReuseIdentifier:@"SCVCollectionViewCell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"SCVSectionHeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SectionHeader"];
-    //[self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 
-    //[flowLayout setHeaderReferenceSize:CGSizeMake(self.collectionView.frame.size.width, 170.0f)];
-    //[flowLayout setFooterReferenceSize:CGSizeMake(self.collectionView.frame.size.width, 75.0f)];
-    
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [flowLayout setMinimumInteritemSpacing:20.0f];
     [flowLayout setMinimumLineSpacing:30.0f];
@@ -109,43 +105,6 @@
     
     return cell;
 }
-
-//-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    
-//    UICollectionReusableView *reusableView = nil;
-//    NSString *suitName = [self.suitsArray objectAtIndex:indexPath.section];
-//    
-//    if (kind == UICollectionElementKindSectionHeader) {
-//        reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SectionHeader" forIndexPath:indexPath];
-//
-//        UIImage *suitImage = [UIImage imageNamed:suitName];
-//
-//        UIImageView *suitImageView = (UIImageView *)[reusableView viewWithTag:1000];
-//        [suitImageView setImage:suitImage];
-//        
-//        UILabel *suitLabel = (UILabel *)[reusableView viewWithTag:2000];
-//        [suitLabel setText:suitName];
-//        
-//    }
-//    
-//    if (kind == UICollectionElementKindSectionFooter) {
-//        reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter" forIndexPath:indexPath];
-//
-////        UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-////        [label setText:[NSString stringWithFormat:@"%@ Footer", suitName]];
-////        [label setFont:[UIFont fontWithName:@"HelveticaNeue" size:22.0f]];
-////        [label setTextColor:[UIColor redColor]];
-////        [label sizeToFit];
-////        [label setFrame:CGRectMake(10, 10, label.frame.size.width, label.frame.size.height)];
-////        [reusableView addSubview:label];
-////        
-////        [reusableView setBackgroundColor:[UIColor greenColor]];
-//    }
-//    
-//    return reusableView;
-//    
-//}
-
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
 

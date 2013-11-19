@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2285009017FF08670011FA13 /* SCVSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2285008F17FF08670011FA13 /* SCVSectionHeaderView.xib */; };
 		229C12CA17FDC40700841916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C12C917FDC40700841916 /* Foundation.framework */; };
 		229C12CC17FDC40700841916 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C12CB17FDC40700841916 /* CoreGraphics.framework */; };
 		229C12CE17FDC40700841916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C12CD17FDC40700841916 /* UIKit.framework */; };
@@ -91,7 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2285008F17FF08670011FA13 /* SCVSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCVSectionHeaderView.xib; sourceTree = "<group>"; };
 		229C12C617FDC40700841916 /* SimpleCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229C12C917FDC40700841916 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		229C12CB17FDC40700841916 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -236,7 +234,6 @@
 				229C1E6F17FDC66D00841916 /* SCVCollectionViewCell.xib */,
 				229C12E117FDC40700841916 /* Images.xcassets */,
 				229C12D017FDC40700841916 /* Supporting Files */,
-				2285008F17FF08670011FA13 /* SCVSectionHeaderView.xib */,
 			);
 			path = SimpleCV;
 			sourceTree = "<group>";
@@ -484,7 +481,6 @@
 				22AF6D07183A95D9001F8CD5 /* jack_of_clubs.png in Resources */,
 				22AF6D05183A95D9001F8CD5 /* 9_of_clubs.png in Resources */,
 				22AF6D32183A95D9001F8CD5 /* queen_of_spades.png in Resources */,
-				2285009017FF08670011FA13 /* SCVSectionHeaderView.xib in Resources */,
 				22AF6D13183A95D9001F8CD5 /* ace_of_diamonds.png in Resources */,
 				22AF6D10183A95D9001F8CD5 /* 7_of_diamonds.png in Resources */,
 				22AF6D2A183A95D9001F8CD5 /* 5_of_spades.png in Resources */,
